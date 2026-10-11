@@ -1,0 +1,13 @@
+<body>
+    <h1>
+        Django網站
+    </h1>
+    <form method="post" action="/djpost">
+        {%csrf_token %}
+        <p>
+            帳號:<input type="text" name="username"/></p>
+         <p>   密碼:<input type="text" name="password"/>
+        </p>
+        <p><button type='submit'>確定</button></p>
+    </form>
+</body>
